@@ -5,9 +5,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>StudentPortal</title>
-<link rel="stylesheet" href="public/styles/list.css">
-<link rel="stylesheet" href="public/styles/footer.css">
-<!-- <link rel="stylesheet" href="public/styles/header.css"> -->
+<link rel="stylesheet" href="css/list.css">
+<link rel="stylesheet" href="css/footer.css">
+<!-- <link rel="stylesheet" href="css/header.css"> -->
 
 </head>
 <header>

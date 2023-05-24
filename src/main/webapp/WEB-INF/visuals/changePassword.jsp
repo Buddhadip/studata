@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forget</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="public/styles/error.css">
-   <!--  <link rel="stylesheet" href="public/styles/footer.css"> -->
-    <link rel="stylesheet" href="public/styles/header.css">
+    <link rel="stylesheet" href="css/error.css">
+   <!--  <link rel="stylesheet" href="css/footer.css"> -->
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <div id="main">
         <div id="header">
-              <img src="public/logo_opt.png" alt="INTERRAIT">
+              <img src="css/logo_opt.png" alt="INTERRAIT">
     <div>
         <c:if test="${sessionScope.loggedInUser == null}">
             <a href="login.do" class="head-button text">LOGIN</a>

@@ -4,17 +4,17 @@
 <html>
 <head>
 <title>Login Form</title>
-<!-- <link rel="stylesheet" href="views/public/styles/error.css">
-<link rel="stylesheet" href="views/public/styles/login.css">
-<link rel="stylesheet" href="views/public/styles/footer.css"> -->
-<!-- <link rel="stylesheet" href="public/styles/header.css"> -->
+<!--  <link rel="stylesheet" href="css/error.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/header.css"> -->
  
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<style>
+ <style>
 
 
 @media screen{
@@ -214,7 +214,7 @@ input[type="submit"]{
 .button:hover {
   background-color: #555;
 }
-</style>
+</style> 
 </head>
 <body>
 <!-- <header>
@@ -253,7 +253,7 @@ input[type="submit"]{
 <c:if test='${!isNormal.equals("true")}'>
    <div class="frame">
 	  <div class="modal">
-	    <img src="public/ohno.png" width="44" height="38" />
+	    <img src="css/ohno.png" width="44" height="38" />
 			<span class="title">ERROR!!!</span>
 			<p><%= message %></p>
 			<div class="button">Go Back</div>
