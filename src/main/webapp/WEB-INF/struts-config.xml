@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts-config>
+
+	 <form-beans>
+     	<form-bean name="RegistrationForm" type="com.info.form.RegistrationForm"/>
+ 	</form-beans>
+ 
+
+  <action-mappings>
+    <action path="/newregistration" type="com.info.action.NewRegistration"
+      name="RegistrationForm" scope="request" input="/WEB-INF/visuals/createUser.jsp"  >
+      <forward name="success" path="/login.do" />
+      <forward name="failure" path="/WEB-INF/visuals/createUser.jsp" />
+    </action>
+  </action-mappings>
+  
+  <action-mappings>
+    <action path="/NewRegisterPage" type="com.info.action.NewRegisterPage"
+      name="NewRegisterPage">
+      <forward name="success" path="/WEB-INF/visuals/createUser.jsp" />
+    </action>
+  </action-mappings>
+  
+  <action-mappings>
+    <action path="/login" type="com.info.action.LoginAction"
+      name="login">
+       <forward name="success" path="/studentList.do" />
+      <forward name="failure" path="/WEB-INF/visuals/login.jsp" />
+    </action>
+  </action-mappings>
+  
+  <action-mappings>
+    <action path="/logout" type="com.info.action.LogoutAction"
+      name="LogoutAction">
+      <forward name="success" path="/login.do" />
+    </action>
+  </action-mappings>
+  
+   <action-mappings>
+    <action path="/studentList" type="com.info.action.DetailsAction"
+      name="StudentList" >
+      <forward name="success"  path="/WEB-INF/visuals/StudentList.jsp"  />
+    </action>
+  </action-mappings>
+  
+   <action-mappings>
+    <action path="/deleteStudent" type="com.info.action.DeleteAction"
+      name="DeleteStudent" >
+		<forward name="success" path="/studentList.do" />
+    </action>
+  </action-mappings>
+  
+  <action-mappings>
+    <action path="/updateStudent" type="com.info.action.UpdateAction"
+      name="RegistrationForm" >
+		<forward name="success" path="/studentList.do" />
+    </action>
+  </action-mappings>
+  
+  
+    <action-mappings>
+    <action path="/changePassword" type="com.info.action.ChangePasswordPage"
+      name="ChangePasswordPage">
+      <forward name="success" path="/WEB-INF/visuals/changePassword.jsp" />
+    </action>
+  </action-mappings>
+  
+  <action-mappings>
+    <action type="com.info.action.ChangePassword" name="ChangePassword" path="/updatePassword">
+		<forward name="success" path="/WEB-INF/visuals/login.jsp"/>
+		<forward name="failure" path="/WEB-INF/visuals/StudentList.jsp"/>
+	</action>
+  </action-mappings>
+  
+  <action-mappings>
+  	<action path="/forgotPassword" type="com.info.action.ForgotPasswordPage"
+            name="ForgotPasswordPage">
+            <forward name="success" path="/WEB-INF/visuals/forgotPassword.jsp" />
+            <forward name="failure" path="/WEB-INF/visuals/login.jsp" />
+        </action>
+  </action-mappings>
+  
+  <action-mappings>
+  	<action path="/updatePass" type="com.info.action.ForgotPassword"
+            name="ForgotPassword">
+            <forward name="success" path="/WEB-INF/visuals/resetPassword.jsp" />
+            <forward name="failure" path="/WEB-INF/visuals/login.jsp" />
+        </action>
+  </action-mappings>
+  
+  <action-mappings>
+  	<action path="/resetPassword" type="com.info.action.ResetPassword" name="ResetPassword">
+  		<forward name="success" path="/WEB-INF/visuals/login.jsp" />
+            <forward name="failure" path="/WEB-INF/visuals/forgotPassword.jsp" />
+  	</action>
+  </action-mappings>
+  
+
+</struts-config>
