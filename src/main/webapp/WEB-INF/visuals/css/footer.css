@@ -1,0 +1,45 @@
+@charset "UTF-8";
+footer{
+    width: 100vw;
+    height: auto;
+    background: #a8c0ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    font-family: MazdaTypeRegular,helvetica,arial,sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#footer-text{
+    font-size: 15px;
+    width: 70%;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#socials{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+#socials div{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
